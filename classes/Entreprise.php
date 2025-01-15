@@ -1,13 +1,14 @@
 <?php
 
 class Entreprise {
-
-    private string $raisonSociale;
+    // Intilisation des attributs de la classe entreprise 
+    private string $raisonSociale; 
     private DateTime $dateCreation;
     private string $adresse;
     private string $cp;
     private string $ville;
-    // private array $employes;
+    // private array $employes; 
+    // la classe entreprise ne possède pas de tableau d'employés, mais un tableau de contrats 
     private array $contrats;
 
     public function __construct( string $raisonSociale, string $dateCreation, string $adresse, string $cp, string $ville){

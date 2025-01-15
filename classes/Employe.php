@@ -5,8 +5,9 @@ class Employe{
     private string $nom;
     private string $prenom;
     private string $email; 
-   // private Entreprise $entreprise; Ce n'est plus valable parce que l'employé n'appartient plus à une seule entreprise
-    //NB : entreprise n'est pas une chaîne de caractères, mais un OBJET (un objet de la classe Entreprise)
+   // private Entreprise $entreprise; Ce n'est plus valable parce que l'employé n'appartient plus à une seule entreprise 
+   // en MLD, l'id_entreprise s'est déplacé dans la table associative Contrat 
+   // ainsi, un employé peut être embauché par plusieurs entreprises 
     private array $contrats;
 
     public function __construct(string $nom, string $prenom, string $email){//, Entreprise $entreprise){
